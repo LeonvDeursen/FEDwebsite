@@ -1,4 +1,4 @@
-Link naar WEbsite:
+Link naar Website:
 https://leonvdeursen.github.io/FEDwebsite/
 
 # Procesverslag
