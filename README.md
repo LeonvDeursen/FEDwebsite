@@ -39,7 +39,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
+  Link: https://www.reddit.com
+  Ik wil de website wat mooier maken sinds de website zelf nu best saai en leeg is. Vooral de desktop versie heeft enorm veel niet gebruikte zwarte stukken.
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   hier de naam van de pagina  
