@@ -43,7 +43,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Ik wil de website wat mooier maken sinds de website zelf nu best saai en leeg is. Vooral de desktop versie heeft enorm veel niet gebruikte zwarte stukken.
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina 
+  hier de naam van de pagina
   <img src="readme-images/small_homepagina.png" width="375px" alt="De mobiele versie van de homepagina van Reddit. Hier worden verschillende posts laten zien die         gepost zijn door verschillende gebruikers.">
 
   #### Screenshot(s) van de tweede pagina (small screen):
