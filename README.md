@@ -48,7 +48,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Profiel Pagina 
-  <img src="readme-images/small_profilepagina.png" width="375px" alt="De profiel pagina van de gebruiker. Hier kan de gebruiker zijn profiel aanpassen en al zijn posts en comments zien.">
+  <img src="readme-images/small_profilepagina.jpg" width="375px" alt="De profiel pagina van de gebruiker. Hier kan de gebruiker zijn profiel aanpassen en al zijn posts en comments zien.">
  
 </details>
 
