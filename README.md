@@ -60,31 +60,62 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 1e werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen:
+    #### Screenreader 
+    - Headings lijken niet te werken op Reddit via screenreader.
+    - Navigatie staat nog steeds bovenaan wanneer een screenreader actief is.
+    - Reddit lijkt niet geoptimaliseerd te zijn voor een screenreader, Als je specifieke dingen wil lezen op reddit is daar geen mogelijkheid voor.
 
-  #### Screenreader
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+    #### Keyboard Navigation
+    - Navigeren met de TAB knop en de pijltjes toetsen werken verbassingwekkend goed op Reddit
+    - Misschien de mogelijkheid om gehele post te selecteren in plaats van 15 keer op TAB moeten drukken.
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+    #### Kleurenblindheid
+    - Alles is nog goed leesbaar op Reddit, elfs in zwart-wit.
+    - Het enige is dat het profiel icoontje erg slecht te zien is wanneer het zwart-wit is.
+
+    #### Elastiek
+    - Telefoon vasthouden is erg moeilijk
+    - Typen is bijna niet te doen wanneer een hand niet te gebruiken is.
+    - Scrollen door de posts gaat now wel.
+    - erg moeilijk om opties hoog op het scherm aan te klikken.
+    - Niet heel erg wanneer een laptop gebruikt wordt, met 1 hand typen op een laptop is nog best goed te doen.
+
+    #### Ballon
+    - Typen terwijl je de hele tijd afgeleid raakt is erg moeilijk
+    - Lezen is nog te doen, alleen afbeedingen goed bekijken is weer lastig.
+    - Scrollen en posts bekijken op reddit is best goed te doen.
+
+    #### Spasmas Parkinson
+    - Kleine opties aanklikken is erg moeilijk sinds je snel mis klikt door het trillen.
+    - Typen is weer erg lastig, net zoals hierboven gezegd is is het erg moeilijk om de kleine toetsen aan te klikken.
+    - Door reddit heen scrollen kan nog prima, alle headings zijn ook nog goed te lezen. 
+    - Kleinere tekst is niet goed te lezen doordat het de hele tijd heen en weer trilt.
+
+    #### Brillen
+    - Liggend aan de bril verschilt het hoe vervelend het is.
+    - De bril met de stip in het midden maakt het enorm lastig om goed een website te kunnen gebruiken. Niks is goed te lezen en het is moeilijk te onderscheiden waar       op de website je bent.
+    - De bril die het wazig maakt is erg lastig met tekst lezen. De tekst moet erg groot zijn om het nog goed te kunnen lezen
 
 
-  #### Muis en Toetsenbord 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
-
-  #### Motoriek (shocks, elastiekjes)
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  ###Mogelijke Oplossingen
+  
+    #### Screenreader
+    - Verschil maken tussen links, headings, etc. zodat gebruikers met screenreaders makkelijker verschillende dingen kunnen selecteren.
+    - Een mogelijkheid creëeren voor mensen met screenreaders om gehele posts te selecteren in plaats van dat ze 15 keer moeten swipen voordat ze bij de volgende post       zijn
+    - De navigatie verplaatsen zodat gebruikers niet de gehele navigatie balk eert te horen krijgen wanneer ze de website op komen.
 
 
-  #### Visueel (brillen, contrast, kleurenblind, dark/light). 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+    #### Muis en Toetsenbord 
+    - Een mogelijkheid creëeren om gehele posts te selecteren met de TAB knop in plaats van dat er 15 keer op gedrukt moet worden voordat ze bij de volgende post             zijn
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+    #### Motoriek (shocks, elastiekjes)
+    - Kleine knoppen groter maken zodat het makkelijker is om in te drukken. Dit houd ook in de knoppen voor het toetsenboord.
+    - Kleinere tekst groter maken zodat het makkelijker is voor de gebruiker om te lezen.
 
+
+    #### Visueel (brillen, contrast, kleurenblind, dark/light). 
+    - Kleinere tekst groter maken en het contrast tussen de achtergrond en de tekst zo goed mogelijk maken zodat het makkelijker is voor de gebruiker om te lezen.
+    - Letten op de kleuren die ik ga gebruiken zodat het voor kleurenblinden ook goed leesbaar blijft.
 </details>
 
 
