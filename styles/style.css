@@ -18,8 +18,11 @@ button, summary {
 /*********************/
 :root {
 	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+	--color-text:#CCCFD1;
+	--color-background:#030303;
+	--color-main: #1A1A1B;
+	--color-select: #272729;
+	--color-accent: #FF4500;
 }
 
 
@@ -35,5 +38,19 @@ button, summary {
 body {
   color:var(--color-text);
   background-color:var(--color-background);
+  font-family: 'Roboto', sans-serif;
 }
 
+
+nav {
+	border: 2px solid var(--color-accent);
+}
+
+nav ul {
+	display: flex;
+	justify-content: space-between;
+}
+
+nav img {
+	width: 3em;
+}
