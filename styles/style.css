@@ -21,7 +21,9 @@ button, summary {
 	--color-text:#CCCFD1;
 	--color-background:#030303;
 	--color-main: #1A1A1B;
+	--color-border: #333435;
 	--color-select: #272729;
+	--color-selected-border: white;
 	--color-accent: #FF4500;
 }
 
@@ -36,21 +38,114 @@ button, summary {
 /* jouw code */
 
 body {
-  color:var(--color-text);
-  background-color:var(--color-background);
-  font-family: 'Roboto', sans-serif;
+	width: 720px;
+
+	margin: 0 auto;
+
+	color:var(--color-text);
+	background-color:var(--color-background);
+	font-family: 'Roboto', sans-serif;
 }
 
 
+
+
+/*************/
+/* NAVIGATIE */
+/*************/
+
 nav {
-	border: 2px solid var(--color-accent);
+	width: 100%;
+}
+
+nav img {
+	width: 3em;
 }
 
 nav ul {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
+	
+	height: 4em;
+
+	background-color: var(--color-main);
+	border: 2px solid var(--color-accent);
 }
 
-nav img {
-	width: 3em;
+nav ul > li {
+	flex-grow: 8;
+}
+
+nav form {
+	flex-grow: 2;
+}
+
+nav form input {
+	height: 3em;
+
+	background-color: var(--color-select);
+
+	border: 1px solid var(--color-border);
+	border-radius: 0.5em;
+}
+
+nav ul ol {
+	flex-grow: 1;
+	overflow: hidden;
+	height: 2em;
+	background-color: #CCCFD1;
+}
+
+nav ul ol li {
+	display: block;
+	text-align: center;
+}
+
+nav > img {
+	flex-grow: 1;
+}
+
+
+
+/****************/
+/* MAIN CONTENT */
+/****************/
+
+
+section article {
+	display: flex;
+	flex-wrap: wrap;
+
+	overflow: hidden;
+
+}
+
+article img:nth-of-type(1) {
+	height: 2em;
+
+	border-radius: 1em;
+}
+
+h3 {
+	width: 100%;
+}
+
+article img:nth-of-type(2) {
+	width: 100%;
+	max-height: 10em;
+
+	max-height: 20em;
+
+	object-fit: cover;
+}
+
+article ul {
+	display: flex;
+	gap: 0.5em;
+}
+
+article ul li {
+	display: flex;
+	background-color: #FF4500;
 }
