@@ -38,7 +38,7 @@ button, summary {
 /* jouw code */
 
 body {
-	width: 720px;
+	width: auto;
 
 	margin: 0 auto;
 
@@ -54,14 +54,18 @@ body {
 /* NAVIGATIE */
 /*************/
 
+
+/*Zorgt ervoor dat de navigatie balk zich over het hele scherm laat zien.*/
 nav {
 	width: 100%;
-}
 
-nav img {
-	width: 3em;
+	position: fixed;
+	top: -1em;
 }
+/**************************************/
 
+
+/*Hier zorg ik ervoor dat alle content in de navigatie balk goed wordt laten zien*/
 nav ul {
 	display: flex;
 	justify-content: space-between;
@@ -73,12 +77,21 @@ nav ul {
 	border: 2px solid var(--color-accent);
 }
 
+nav img {
+	width: 3em;
+}
+
 nav ul > li {
 	flex-grow: 8;
 }
+/***********************************/
 
+
+/*Hier is de styling voor de zoek functie. 
+Deze is op mobiel niet zichtbaar tot er op het zoek icoontje wordt gedrukt*/
 nav form {
 	flex-grow: 2;
+	width: 0em;
 }
 
 nav form input {
@@ -90,6 +103,30 @@ nav form input {
 	border-radius: 0.5em;
 }
 
+nav form button {
+	height: 3em;
+	
+	position: absolute;
+	top: -5em;
+}
+/********************************************/
+
+
+/*Hamburger menu in navigatie balk*/
+nav ul ol {
+	position: fixed;
+	transform: translateY(50%);
+
+	height: 10em;
+	background-color: #FF4500;
+}
+
+.nav_menu_open {
+
+}
+
+
+/*Overige Content in Navigatie balk*/
 nav ul ol {
 	flex-grow: 1;
 	overflow: hidden;
@@ -105,6 +142,8 @@ nav ul ol li {
 nav > img {
 	flex-grow: 1;
 }
+/*******************************************/
+
 
 
 
@@ -113,6 +152,9 @@ nav > img {
 /****************/
 
 
+
+
+/*Algemene Styling artikelen*/
 section article {
 	display: flex;
 	flex-wrap: wrap;
@@ -121,23 +163,8 @@ section article {
 
 }
 
-article img:nth-of-type(1) {
-	height: 2em;
-
-	border-radius: 1em;
-}
-
 h3 {
 	width: 100%;
-}
-
-article img:nth-of-type(2) {
-	width: 100%;
-	max-height: 10em;
-
-	max-height: 20em;
-
-	object-fit: cover;
 }
 
 article ul {
@@ -148,4 +175,21 @@ article ul {
 article ul li {
 	display: flex;
 	background-color: #FF4500;
+}
+
+article img:nth-of-type(1) {
+	height: 2em;
+
+	border-radius: 1em;
+}
+/**************************************/
+
+
+article img:nth-of-type(2) {
+	width: 100%;
+	max-height: 10em;
+
+	max-height: 20em;
+
+	object-fit: cover;
 }
