@@ -1,6 +1,10 @@
 /**************/
 /* CSS REMEDY */
 /**************/
+* {
+	/*outline: 1px yellow solid;*/
+}
+
 *, *::after, *::before {
   box-sizing:border-box;  
 }
@@ -8,6 +12,7 @@
 button, summary {
 	cursor: pointer;
 }
+
 
 
 
@@ -21,7 +26,7 @@ button, summary {
 	--color-text:#CCCFD1;
 	--color-background:#030303;
 	--color-main: #1A1A1B;
-	--color-border: #333435;
+	--color-secondary: #333435;
 	--color-select: #272729;
 	--color-selected-border: white;
 	--color-accent: #FF4500;
@@ -40,108 +45,150 @@ button, summary {
 body {
 	width: auto;
 
+	padding-top: 3.5em;
 	margin: 0 auto;
 
 	color:var(--color-text);
 	background-color:var(--color-background);
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Noto Sans', 'Roboto', sans-serif;
 }
 
+a {
+	color: var(--color-text);
 
+	text-decoration: none;
+}
 
 
 /*************/
 /* NAVIGATIE */
 /*************/
 
-
-/*Zorgt ervoor dat de navigatie balk zich over het hele scherm laat zien.*/
-nav {
-	width: 100%;
-
-	position: fixed;
-	top: -1em;
-}
-/**************************************/
-
-
 /*Hier zorg ik ervoor dat alle content in de navigatie balk goed wordt laten zien*/
-nav ul {
+nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+
+	position: fixed;
+	top: 0;
 	
-	height: 4em;
+	height: 3.5em;
+	width: 100%;
 
 	background-color: var(--color-main);
-	border: 2px solid var(--color-accent);
+}
+
+nav div {
+	display: flex;
+	align-items: center;
+
+	gap: 0.5em;
+
+	padding: 0.5em;
+}
+
+nav a {
+	font-size: 1.5em;
 }
 
 nav img {
-	width: 3em;
-}
-
-nav ul > li {
-	flex-grow: 8;
+	width: 2.5em;
 }
 /***********************************/
 
 
-/*Hier is de styling voor de zoek functie. 
-Deze is op mobiel niet zichtbaar tot er op het zoek icoontje wordt gedrukt*/
+/*Hier is de styling voor de zoek functie.*/
+
 nav form {
-	flex-grow: 2;
-	width: 0em;
-}
+	display:  flex;
 
-nav form input {
-	height: 3em;
+	justify-self: end;
 
-	background-color: var(--color-select);
+	height: 2.5em;
+	width: 8em;
 
-	border: 1px solid var(--color-border);
+	background-color: var(--color-secondary);
+
+	border: 1px solid var(--color-text);
 	border-radius: 0.5em;
 }
 
-nav form button {
-	height: 3em;
-	
-	position: absolute;
-	top: -5em;
+
+nav form input {
+	border: none;
+
+	width: 100%;
+
+	background-color:  transparent;
 }
+
+nav form button {
+	display: flex;
+
+	align-items: center;
+	
+	border: none;
+
+	background-color: transparent;
+	filter: invert();
+}
+
+nav form button img {
+	width: 1.5rem;
+}
+
+
 /********************************************/
 
 
 /*Hamburger menu in navigatie balk*/
-nav ul ol {
+
+body > ol {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+
 	position: fixed;
-	transform: translateY(50%);
+	right:	-60%;
+	top: 3.5em;
 
-	height: 10em;
-	background-color: #FF4500;
+	list-style-type: none;
+
+	margin: 0;
+	padding: 0;
+
+	background-color: var(--color-main);
+	border: 1px solid var(--color-secondary);
+	border-radius: 0 0 0 0.5em;
+
+	transition: 0.5s;
 }
 
-.nav_menu_open {
+body > ol li {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 
+	height: 3em;
+	width: 100%;
+
+	padding-left: 1em;
+	padding-right: 1em;
+	border-top: 1px solid var(--color-secondary);
 }
+/*********************************************/
 
+/*Hamburger Menu Open*/
 
+body > ol.menuOpen{
+	right: 0%;
+
+	transition: 0.5s;
+}
 /*Overige Content in Navigatie balk*/
-nav ul ol {
-	flex-grow: 1;
-	overflow: hidden;
-	height: 2em;
-	background-color: #CCCFD1;
-}
 
-nav ul ol li {
-	display: block;
-	text-align: center;
-}
 
-nav > img {
-	flex-grow: 1;
-}
 /*******************************************/
 
 
