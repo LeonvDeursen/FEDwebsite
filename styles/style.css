@@ -59,6 +59,35 @@ a {
 	text-decoration: none;
 }
 
+section {
+	width: 90%;
+
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+article {
+	background-color: var(--color-main);
+	border: 1px solid var(--color-secondary);
+
+	padding: 0.5em;
+
+	border-radius: 0.5em;
+}
+
+ol {
+	list-style-type: none;
+
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style-type: none;
+
+	margin: 0;
+	padding: 0;
+}
 
 /*************/
 /* NAVIGATIE */
@@ -153,11 +182,6 @@ body > ol {
 	right:	-60%;
 	top: 3.5em;
 
-	list-style-type: none;
-
-	margin: 0;
-	padding: 0;
-
 	background-color: var(--color-main);
 	border: 1px solid var(--color-secondary);
 	border-radius: 0 0 0 0.5em;
@@ -204,19 +228,34 @@ body > ol.menuOpen{
 /*Algemene Styling artikelen*/
 section article {
 	display: flex;
-	flex-wrap: wrap;
-
-	overflow: hidden;
-
+	flex-direction: column;
 }
 
-h3 {
-	width: 100%;
+section article div {
+	display: flex;
+	flex-direction: row;
+
+	justify-content: flex-start;
+	align-items: center;
+
+	height: 2em;
+
+	gap: 0.5em;
+}
+
+section article div p {
+	font-size: 0.7em;
+	filter: opacity(0.3);
+}
+
+section article div ol {
+	filter: opacity(0);
 }
 
 article ul {
 	display: flex;
 	gap: 0.5em;
+
 }
 
 article ul li {
@@ -224,15 +263,16 @@ article ul li {
 	background-color: #FF4500;
 }
 
-article img:nth-of-type(1) {
+article div img:nth-of-type(1) {
 	height: 2em;
+	width: 2em;
 
 	border-radius: 1em;
 }
 /**************************************/
 
 
-article img:nth-of-type(2) {
+article img:nth-of-type(1) {
 	width: 100%;
 	max-height: 10em;
 
