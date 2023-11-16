@@ -60,12 +60,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 1e werkgroep</summary>
 
   ### Bevindingen
-  Screenreader 
+    #### Screenreader 
     - Headings lijken niet te werken op Reddit via screenreader.
     - Navigatie staat nog steeds bovenaan wanneer een screenreader actief is.
     - Reddit lijkt niet geoptimaliseerd te zijn voor een screenreader, Als je specifieke dingen wil lezen op reddit is daar geen mogelijkheid voor.
 
-  Keyboard Navigation
+    #### Keyboard Navigation
     - Navigeren met de TAB knop en de pijltjes toetsen werken verbassingwekkend goed op Reddit
     - Misschien de mogelijkheid om gehele post te selecteren in plaats van 15 keer op TAB moeten drukken.
 
@@ -97,15 +97,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
     - De bril die het wazig maakt is erg lastig met tekst lezen. De tekst moet erg groot zijn om het nog goed te kunnen lezen
 
 
-  ###Mogelijke Oplossingen
+  ### Mogelijke Oplossingen
   
-  Screenreader
+    #### Screenreader
     - Verschil maken tussen links, headings, etc. zodat gebruikers met screenreaders makkelijker verschillende dingen kunnen selecteren.
     - Een mogelijkheid creëeren voor mensen met screenreaders om gehele posts te selecteren in plaats van dat ze 15 keer moeten swipen voordat ze bij de volgende post       zijn
     - De navigatie verplaatsen zodat gebruikers niet de gehele navigatie balk eert te horen krijgen wanneer ze de website op komen.
 
 
-  Muis en Toetsenbord 
+    #### Muis en Toetsenbord 
     - Een mogelijkheid creëeren om gehele posts te selecteren met de TAB knop in plaats van dat er 15 keer op gedrukt moet worden voordat ze bij de volgende post             zijn
 
     #### Motoriek (shocks, elastiekjes)
