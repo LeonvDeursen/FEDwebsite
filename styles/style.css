@@ -15,17 +15,110 @@
 /*********************/
 :root {
 	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+	--color-text:rgb(224, 226, 228);
+	--color-background:#030303;
+	--color-section-background:rgb(46, 46, 48);
+	--color-highlight:rgb(74, 74, 77);
 }
 
 
 
 
+/*********************/
+/* Universal Changes */
+/*********************/
 
-/****************/
-/* JOUW STYLING */
-/****************/
+img {
+	max-height: 100%;
+}
 
-/* jouw code */
+main {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
 
+	background-color: var(--color-background);
+}
+
+
+
+
+/******************/
+/* Navigation Bar */
+/******************/
+
+nav {
+	display: flex;
+	justify-content: space-between;
+
+	position: sticky;
+	top: 0;
+
+	max-height: 3em;
+
+	background-color: var(--color-section-background);
+}
+
+
+
+
+/******************************************/
+/* Main content of the page (the section) */
+/******************************************/
+
+section {
+	display: flex;
+	flex-direction: column;
+
+	align-items: center;
+
+	min-width: 40em;
+}
+
+
+
+
+/*********************************************************/
+/* Shared Post (the articles within the section divider) */
+/*********************************************************/
+
+article.post {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	
+	background-color: var(--color-section-background);
+
+	min-width: 40em;
+
+	border-radius: 0.5em;
+}
+
+article.post img{
+	min-width: 90%;
+}
+
+div.main_post_content {
+	min-width: 90%;
+}
+
+aside.under_post {
+	display: flex;
+	justify-content: flex-start;
+}
+
+aside.under_post button, aside.under_post a {
+	padding: 0.25em 0.75em 0.25em 0.75em;
+}
+
+
+
+
+/***********************/
+/* Screenreader changes*/
+/***********************/
+
+button.screenreader_skip_content {
+	position: fixed;
+	translate: 100% 0%;
+}

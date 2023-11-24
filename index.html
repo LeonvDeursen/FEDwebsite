@@ -6,27 +6,121 @@
 	<meta name="author" content="jouw naam">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
-	<title>Howdy FED2324</title>
+	<title>Reddit2.0</title>
 	
 	<link href="styles/style.css" rel="stylesheet">
 	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 </head>
 
 <body>
+
+
+	<!--Button so screenreader users can skip te navigation and directly go to the main content-->
+	<!------------------------------------------------------------------------------------------->
+	<button class="screenreader_skip_content">
+		Skip to main content
+	</button>
+
+
+
+		<!------------------------------------------------------------------>
 		<!--The navigation bar and all the respective links to other pages-->
 		<!------------------------------------------------------------------>
-		<!------------------------------------------------------------------>
 	<nav>
+
+
+		<!--The logo and name of the website. redirects to the home page-->
+		<!---------------------------------------------------------------->
+		<a href="">
+			<img src="images/reddit_logo.png" alt="Reddit logo">
+			<img src="images/placeholder.png" alt="Home screen">
+		</a>
+
+
+		<!--The search bar with search icon-->
+		<!----------------------------------->
+		<div class="search_bar">
+			<img src="images/search_icon.png" alt="">
+			<input type="text" placeholder="Search..">
+		</div>
+
+
+		<!--all extra links grouped in a div for better organisation with flexbox-->
+		<!------------------------------------------------------------------------->
+		<div class="navigation_links">
+
+			<!--Link to a page for chatting with other people-->
+			<a href="">
+				<img src="images/placeholder.png" alt="Chat with other people">
+			</a>
+
+			<!--Link to a page with al your notifications-->
+			<a href="">
+				<img src="images/placeholder.png" alt="notifications">
+			</a>
+
+			<!--Link to a page for creating a post of your own-->
+			<a href="">
+				<img src="images/placeholder.png" alt="Create post">
+			</a>
+		</div>
+
+
+		<!--The dropdown menu with all the settings and account information-->
+		<!------------------------------------------------------------------->
+		<button>
+
+			<!--your profile picture-->
+			<img src="images/placeholder.png" alt="Profile picture">
+
+			<!--another divider with your username for better organisation with flexbox-->
+			<aside class="username_text">
+				<h2>
+					Your Username
+				</h2>
+				<p>
+					0 karma
+				</p>
+			</aside>
+
+			<!--down arrow showing it's a dropdown menu-->
+			<img src="images/placeholder.png" alt="down_arrow">
+		</button>
 
 	</nav>
 
 
+
+		<!----------------------------------------------------------------------------------------------------------------------------------------->
 		<!--The main content of the page. Here are all the posts that people can share with eachother and different options for sorting this page-->
 		<!----------------------------------------------------------------------------------------------------------------------------------------->
-		<!----------------------------------------------------------------------------------------------------------------------------------------->
 	<main>
+
+
+		<!--Here is the banner that is displayed above the all the posts, additionally the subreddit name and extra buttons are also places here-->
+		<!---------------------------------------------------------------------------------------------------------------------------------------->
 		<header>
 
+			<!--The banner of the subreddit-->
+			<img src="images/placeholder.png" alt="Banner for subreddit_name">
+
+			<!--The image of the subreddit-->
+			<img src="images/placeholder.png" alt="placeholder for subreddit">
+
+			<!--The name of the subreddit-->
+			<h1>
+				r/subname
+			</h1>
+
+			<!--A button that is used by people to join the subreddit-->
+			<button>
+				JOIN
+			</button>
+
+			<!--A button to allow notifications-->
+			<button>
+				notifications
+			</button>
 		</header>
 
 
@@ -37,37 +131,41 @@
 			<!--Beneath here is the html code for a singular post-->
 			<article class="post">
 
-				<!--The username of who shared the post-->
-				<a href="">
-					posted by u/randomperson
-				</a>
+				<!--A divider used for easy organisation using flexbox-->
+				<div class="main_post_content">
 
-				<!--The title of the post. Using a header so someone using a screenreader can easily jump from post to post-->
-				<h1>
-					Fuck this
-				</h1>
-
-				<!--The image, video, article or piece of text the person has shared-->
-				<img src="images/placeholder.png" alt="description of post">
-
-				<!--The different buttons and links that are underneath the post-->
-				<aside class="under_post">
-					<a href="" class="post_options">
-						<p>62 comments</p>
+					<!--The username of who shared the post-->
+					<a href="">
+						posted by u/randomperson
 					</a>
 
-					<a href="" class="post_options">
-						<p>share</p>
-					</a>
+					<!--The title of the post. Using a header so someone using a screenreader can easily jump from post to post-->
+					<h1>
+						Fuck this
+					</h1>
 
-					<a href="" class="post_options">
-						<p>save</p>
-					</a>
+					<!--The image, video, article or piece of text the person has shared-->
+					<img src="images/placeholder.png" alt="description of post">
 
-					<button class="more_options">
-						* * *
-					</button>
-				</aside>
+					<!--The different buttons and links that are underneath the post-->
+					<aside class="under_post">
+						<a href="" class="post_options">
+							<p>62 comments</p>
+						</a>
+
+						<a href="" class="post_options">
+							<p>share</p>
+						</a>
+
+						<a href="" class="post_options">
+							<p>save</p>
+						</a>
+
+						<button class="more_options">
+							* * *
+						</button>
+					</aside>
+				</div>
 
 				<!--The different buttons and links that are beside the post-->
 				<aside class="beside_post">
