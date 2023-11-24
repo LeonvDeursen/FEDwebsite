@@ -155,9 +155,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   | student 1      | student 2          | student 3    | student 4        |
   | ---            | ---                | ---          | ---              |
   | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
+  | en dat oo      | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
 
+Student 1: Meer informatie over Multi-Responsive-Design en hoe je dat moet toepassen.
+Student 2: informatie vragen over de SVG foutmeldingen.
+Student 3: wat er wordt verwacht als je het niet Multi-Responsive maakt. Hoe diep moet je op de rest gaan.
+Student 4: Een dubbel check over hoe de html geschreven is.
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
