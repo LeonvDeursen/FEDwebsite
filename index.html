@@ -10,6 +10,10 @@
 	
 	<link href="styles/style.css" rel="stylesheet">
 	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -26,7 +30,7 @@
 		<!------------------------------------------------------------------>
 		<!--The navigation bar and all the respective links to other pages-->
 		<!------------------------------------------------------------------>
-	<nav>
+	<nav class="navigation_bar">
 
 
 		<!--The logo and name of the website. redirects to the home page-->
@@ -39,15 +43,15 @@
 
 		<!--The search bar with search icon-->
 		<!----------------------------------->
-		<div class="search_bar">
+		<search>
 			<img src="images/search_icon.png" alt="">
 			<input type="text" placeholder="Search..">
-		</div>
+		</search>
 
 
 		<!--all extra links grouped in a div for better organisation with flexbox-->
 		<!------------------------------------------------------------------------->
-		<div class="navigation_links">
+		<nav>
 
 			<!--Link to a page for chatting with other people-->
 			<a href="">
@@ -63,7 +67,7 @@
 			<a href="">
 				<img src="images/placeholder.png" alt="Create post">
 			</a>
-		</div>
+		</nav>
 
 
 		<!--The dropdown menu with all the settings and account information-->
@@ -161,7 +165,7 @@
 							<p>save</p>
 						</a>
 
-						<button class="more_options">
+						<button>
 							* * *
 						</button>
 					</aside>
