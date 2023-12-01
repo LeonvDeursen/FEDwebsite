@@ -19,6 +19,10 @@
 	--color-background:#030303;
 	--color-section-background:rgb(46, 46, 48);
 	--color-highlight:rgb(74, 74, 77);
+	--color-highligth-secondary: white;
+	--color-accent:rgb(224, 226, 228);
+
+	--header-offset: -10%;
 
 	--font-style-heading: ;
 	--font-style: 'Noto Sans', sans-serif ;
@@ -33,6 +37,7 @@
 
 img {
 	max-height: 100%;
+	max-width: 100%;
 }
 
 body {
@@ -52,6 +57,16 @@ a {
 	color: var(--color-text);
 }
 
+h1 {
+	color: var(--color-text);
+}
+
+button {
+	background-color: var(--color-accent);
+
+	border: 0.1em solid var(--color-accent);
+	border-radius: 10em;
+}
 
 
 /******************/
@@ -70,14 +85,20 @@ nav.navigation_bar {
 	background-color: var(--color-section-background);
 }
 
+nav.navigation_bar a {
+	width: 8em;
+}
 
+nav nav {
+	width: 9.55em;
+}
 
 
 /******************************************/
 /* Main content of the page (the section) */
 /******************************************/
 
-section {
+section:not(article section) {
 	display: flex;
 	flex-direction: column;
 
@@ -89,9 +110,9 @@ section {
 
 
 
-/*********************************************************/
-/* Shared Post (the articles within the section divider) */
-/*********************************************************/
+/*************************************************************************************************************************/
+/* The header of the page. This gives information about where on the website you are and what subreddit you are visiting */
+/*************************************************************************************************************************/
 
 header {
 	min-width: 100%;
@@ -106,6 +127,16 @@ header {
 	background-color: var(--color-section-background);
 }
 
+header h1 {
+	position: relative;
+	top: var(--header-offset);
+}
+
+header button {
+	position: relative;
+	top: var(--header-offset);
+}
+
 header img {
 	height: 30%;
 }
@@ -115,6 +146,14 @@ header img:nth-of-type(1) {
 	height: 12em;
 }
 
+header img:nth-of-type(2) {
+	border-radius: 100%;
+	border: 0.25em solid var(--color-highligth-secondary);
+
+	position: relative;
+	top: var(--header-offset);
+}
+
 
 
 
@@ -122,33 +161,37 @@ header img:nth-of-type(1) {
 /* Shared Post (the articles within the section divider) */
 /*********************************************************/
 
-article.post {
+article {
 	display: flex;
 	flex-direction: row-reverse;
 	justify-content: space-between;
 	
 	background-color: var(--color-section-background);
 
-	min-width: 40em;
+	min-width: 50em;
+	max-width: 50em;
 
 	border-radius: 0.5em;
 	border: 1px solid var(--color-highlight);
 }
 
-article.post img{
+article img{
+	min-width: 90%;
+	max-width: 90%;
+
+	overflow: hidden;
+}
+
+article section {
 	min-width: 90%;
 }
 
-div.main_post_content {
-	min-width: 90%;
-}
-
-aside.under_post {
+article section aside {
 	display: flex;
 	justify-content: flex-start;
 }
 
-aside.under_post button, aside.under_post a {
+article section aside button, article section aside a {
 	padding: 0.25em 0.75em 0.25em 0.75em;
 }
 
@@ -159,7 +202,7 @@ aside.under_post button, aside.under_post a {
 /* Screenreader changes*/
 /***********************/
 
-button.screenreader_skip_content {
+body button:first-child:not(aside button) {
 	position: fixed;
 	translate: 100% 0%;
 }

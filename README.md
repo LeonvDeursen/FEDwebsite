@@ -166,10 +166,8 @@ Student 4: Een dubbel check over hoe de html geschreven is.
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Ik heb nog erg veel classes en divjes. Probeer die zoveel mogelijk weg te werken. 
+  - Als ik gebruik wil maken van een externe bron om extra dingen te kunnen doen met Javascript. zorg ervoor dat ik dan nog wel genoeg tijd heb om de opdracht te voltooien. Ga dus niet teveel daarmee proberen te kloten.
 
 </details>
 
@@ -194,6 +192,10 @@ Student 4: Een dubbel check over hoe de html geschreven is.
   | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
+
+Student 1: Wil zijn foto als achtergrond hebben bij een ul en wil proberen een carousel te maken.
+Student 2: gaat vragen stellen voor svg foutmedlingen en wil proberen een oneindige scroll feed na te maken.
+Student 3: Wat vragen over hoe ik het best plaatjes kan schalen en hoe ik overflow kan gebruiken om plaatjes horizontaal over te laten lopen.
 
 
   ### Verslag van meeting
